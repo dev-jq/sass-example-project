@@ -1,0 +1,20 @@
+@import 'reset/normalize';
+@import 'variables';
+
+/**
+ * Main example styles starts here:
+ */
+.my-example-class{
+	display: block;
+	.test{
+		background-color: gray;
+		line-height: $default-font-size;
+		color: $black;
+		&:before{
+			content: 'example';
+		}
+		&.active{
+			text-decoration: underline;
+		}
+	}
+}
